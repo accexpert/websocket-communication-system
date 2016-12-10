@@ -1,6 +1,8 @@
 var app = angular.module('ClientWsIframe', ['ngRoute','ngCookies']);
+
 app.controller('ClientController', ['$scope','$rootScope',
     function($scope, $rootScope) {
+        var clientId = window.location.href.split('=')[1];
         $scope.userList = [
             {id:1, type:0,name:'user1'},
             {id:1, type:0,name:'user1'},
