@@ -1,0 +1,31 @@
+body {
+    overflow: hidden;
+}
+.client-name-section {
+
+}
+.client-user-list-section {
+    height: 100%;
+    float: left;
+    position: relative;
+    width: 150px;
+}
+.client-user-conversation-section {
+    height: 100%;
+    float: left;
+    position: relative;
+    width: 370px;
+    height: 250px;
+}
+.client-user-conversation-content-section {
+    height: 220px;
+}
+.client-user-conversation-text-section {
+
+}
+.client-user-conversation-text-section input[type=text] {
+    width: 300px;
+}
+.client-user-conversation-text-section input[type=button] {
+    width: 60px;
+}

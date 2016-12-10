@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Client frame</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/client.css">
+    <script src="../js/angular.1.5.8.js"></script>
+    <script src="../js/angular-cookies.min.1.5.8.js"></script>
+    <script src="../js/angular-route.1.5.8.js"></script>
+    <script src="../js/sockjs.min.js"></script>
+    <script src="../js/stomp.min.js"></script>
+    <script src="../js/application.js"></script>
+    <script src="../js/ws.js"></script>
+</head>
+<body>
+    <div class="client-name-section">
+        <p>Client name: Test</p>
+    </div>
+    <div class="client-user-list-section">
+        <table>
+            <tr>
+                <td>User1</td>
+            </tr>
+            <tr>
+                <td>User2</td>
+            </tr>
+        </table>
+    </div>
+    <div class="client-user-conversation-section">
+        <div class="client-user-conversation-content-section">
+            <table>
+                <tr>
+                    <td>date-time</td>
+                    <td>text</td>
+                </tr>
+            </table>
+        </div>
+        <div class="client-user-conversation-text-section">
+            <input type="text">
+            <input type="button" value="Send">
+        </div>
+    </div>
+</body>
+</html>
