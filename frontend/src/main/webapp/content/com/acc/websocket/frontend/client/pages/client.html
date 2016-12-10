@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  ng-app='ClientWsIframe'>
 <head>
     <meta charset="UTF-8">
     <title>Client frame</title>
@@ -13,28 +13,29 @@
     <script src="../js/application.js"></script>
     <script src="../js/ws.js"></script>
 </head>
-<body>
+<body ng-controller="ClientController">
     <div class="client-name-section">
         <p>Client name: Test</p>
     </div>
     <div class="client-user-list-section">
-        <table>
-            <tr>
-                <td>User1</td>
-            </tr>
-            <tr>
-                <td>User2</td>
-            </tr>
-        </table>
+        <div class="client-user-list-inside-section">
+            <table>
+                <tr data-ng-repeat="user in userList">
+                    <td>{{user.name}}</td>
+                </tr>
+            </table>
+        </div>
     </div>
     <div class="client-user-conversation-section">
         <div class="client-user-conversation-content-section">
-            <table>
-                <tr>
-                    <td>date-time</td>
-                    <td>text</td>
-                </tr>
-            </table>
+            <div class="client-user-conversation-inside-content-section">
+                <table>
+                    <tr data-ng-repeat="content in conversationContent">
+                        <td>{{content.timestamp}}</td>
+                        <td>{{content.content}}</td>
+                    </tr>
+                </table>
+            </div>
         </div>
         <div class="client-user-conversation-text-section">
             <input type="text">

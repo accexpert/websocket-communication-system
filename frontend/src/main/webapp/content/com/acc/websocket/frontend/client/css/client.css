@@ -1,15 +1,23 @@
 body {
     overflow: hidden;
+    font-size: 10px;
 }
 .client-name-section {
 
 }
 .client-user-list-section {
-    height: 100%;
+    height: 250px;
     float: left;
     position: relative;
     width: 150px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
+.client-user-list-inside-section {
+    overflow: hidden;
+}
+
+
 .client-user-conversation-section {
     height: 100%;
     float: left;
@@ -19,6 +27,11 @@ body {
 }
 .client-user-conversation-content-section {
     height: 220px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.client-user-conversation-inside-content-section {
+    overflow: hidden;
 }
 .client-user-conversation-text-section {
 
